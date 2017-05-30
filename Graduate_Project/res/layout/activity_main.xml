@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wzf.helloworld.MainActivity" >
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@+id/ll_btns"
+         />
+    <!-- android:src="@drawable/text" -->
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_fromPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="click_loadFromPhone"
+            android:text="从手机加载图片" />
+
+        <Button
+            android:id="@+id/btn_fromCarmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="click_loadFromCarmer"
+            android:text="从照相机拍摄" />
+    </LinearLayout>
+
+</RelativeLayout>
