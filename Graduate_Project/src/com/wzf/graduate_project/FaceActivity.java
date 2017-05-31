@@ -59,7 +59,7 @@ public class FaceActivity extends Activity {
 		// 8. 显示原始图片
 		imageView_show.setImageBitmap(bitmap);
 		
-		
+		    
 //		facesDisplayView.setBitmap(bitmap);
 	}
 
